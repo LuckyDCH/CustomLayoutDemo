@@ -15,6 +15,9 @@
 		B87BCC9B22F6EEA4009E5E31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BCC9A22F6EEA4009E5E31 /* main.m */; };
 		B87BCCA522F6EEA4009E5E31 /* CustomLayoutBestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BCCA422F6EEA4009E5E31 /* CustomLayoutBestDemoTests.m */; };
 		B87BCCB022F6EEA4009E5E31 /* CustomLayoutBestDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BCCAF22F6EEA4009E5E31 /* CustomLayoutBestDemoUITests.m */; };
+		B87BCCC022F6EF4D009E5E31 /* CustomLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BCCBF22F6EF4D009E5E31 /* CustomLayoutViewController.m */; };
+		B87BCCC322F6F132009E5E31 /* Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BCCC122F6F132009E5E31 /* Layout.m */; };
+		B87BCCC622F6F209009E5E31 /* TextCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B87BCCC522F6F209009E5E31 /* TextCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		B87BCCAB22F6EEA4009E5E31 /* CustomLayoutBestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLayoutBestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B87BCCAF22F6EEA4009E5E31 /* CustomLayoutBestDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayoutBestDemoUITests.m; sourceTree = "<group>"; };
 		B87BCCB122F6EEA4009E5E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B87BCCBE22F6EF4D009E5E31 /* CustomLayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomLayoutViewController.h; sourceTree = "<group>"; };
+		B87BCCBF22F6EF4D009E5E31 /* CustomLayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLayoutViewController.m; sourceTree = "<group>"; };
+		B87BCCC122F6F132009E5E31 /* Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Layout.m; sourceTree = "<group>"; };
+		B87BCCC222F6F132009E5E31 /* Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Layout.h; sourceTree = "<group>"; };
+		B87BCCC422F6F209009E5E31 /* TextCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextCollectionViewCell.h; sourceTree = "<group>"; };
+		B87BCCC522F6F209009E5E31 /* TextCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		B87BCC8A22F6EEA3009E5E31 /* CustomLayoutBestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B87BCCBD22F6EF25009E5E31 /* flowlayout */,
 				B87BCC8B22F6EEA3009E5E31 /* AppDelegate.h */,
 				B87BCC8C22F6EEA3009E5E31 /* AppDelegate.m */,
 				B87BCC8E22F6EEA3009E5E31 /* ViewController.h */,
@@ -130,6 +140,19 @@
 				B87BCCB122F6EEA4009E5E31 /* Info.plist */,
 			);
 			path = CustomLayoutBestDemoUITests;
+			sourceTree = "<group>";
+		};
+		B87BCCBD22F6EF25009E5E31 /* flowlayout */ = {
+			isa = PBXGroup;
+			children = (
+				B87BCCC222F6F132009E5E31 /* Layout.h */,
+				B87BCCC122F6F132009E5E31 /* Layout.m */,
+				B87BCCBE22F6EF4D009E5E31 /* CustomLayoutViewController.h */,
+				B87BCCBF22F6EF4D009E5E31 /* CustomLayoutViewController.m */,
+				B87BCCC422F6F209009E5E31 /* TextCollectionViewCell.h */,
+				B87BCCC522F6F209009E5E31 /* TextCollectionViewCell.m */,
+			);
+			path = flowlayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B87BCC9022F6EEA3009E5E31 /* ViewController.m in Sources */,
+				B87BCCC622F6F209009E5E31 /* TextCollectionViewCell.m in Sources */,
+				B87BCCC322F6F132009E5E31 /* Layout.m in Sources */,
 				B87BCC9B22F6EEA4009E5E31 /* main.m in Sources */,
 				B87BCC8D22F6EEA3009E5E31 /* AppDelegate.m in Sources */,
+				B87BCCC022F6EF4D009E5E31 /* CustomLayoutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

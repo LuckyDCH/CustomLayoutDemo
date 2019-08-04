@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomLayoutViewController.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(200, 200, 60, 30);
+    [btn setTitle:@"show" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn addTarget:self action:@selector(showViewC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+}
+
+- (void)showViewC
+{
+    CustomLayoutViewController *vc = [CustomLayoutViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
